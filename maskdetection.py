@@ -15,7 +15,7 @@ test_image=image.load_img(newname,
                           target_size=(150,150,3))
 
 print("test_image is",test_image)
-os.replace(newname,"public/image.jpg")
+# os.replace(newname,"public/image.jpg")
 
 print("OS replaced")
 test_image=image.img_to_array(test_image)

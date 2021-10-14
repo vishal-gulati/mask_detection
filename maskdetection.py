@@ -18,7 +18,6 @@ oldname = sys.argv[1]
 newname=sys.argv[1]+".jpg"
 os.rename(oldname,newname)
 
-print("file renamed")
 #newname=sys.argv[1]
 model=Sequential()
 model.add(Conv2D(32,(3,3),activation='relu',input_shape=(150,150,3)))

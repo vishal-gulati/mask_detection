@@ -19,18 +19,7 @@ newname=sys.argv[1]+".jpg"
 os.rename(oldname,newname)
 
 #newname=sys.argv[1]
-model=Sequential()
-model.add(Conv2D(32,(3,3),activation='relu',input_shape=(150,150,3)))
-model.add(MaxPooling2D() )
-model.add(Conv2D(32,(3,3),activation='relu'))
-model.add(MaxPooling2D() )
-model.add(Conv2D(32,(3,3),activation='relu'))
-model.add(MaxPooling2D() )
-model.add(Flatten())
-model.add(Dense(100,activation='relu'))
-model.add(Dense(1,activation='sigmoid'))
-model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['accuracy'])
-mymodel=model.load_weights('mymodel.h5')
+mymodel=load_model('mymodel.h5')
 test_image=image.load_img(newname,
                           target_size=(150,150,3))
 

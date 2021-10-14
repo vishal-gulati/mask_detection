@@ -55,7 +55,7 @@ app.post('/upload', upload.single('upload'), (req, res) => {
 
 app.get('/check',(req,res)=>{
   console.log("Check Route")
-  res.render('pages/image',{data: "Mosaic.jpeg"});
+  res.render('pages/image',{data: "image.jpg"});
 })
 
 app.get('/',(req,res)=>{

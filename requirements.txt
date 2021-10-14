@@ -1,3 +1,4 @@
 tensorflow-cpu
 numpy
 keras
+Pillow
